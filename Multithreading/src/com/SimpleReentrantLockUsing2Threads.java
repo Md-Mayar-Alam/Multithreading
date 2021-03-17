@@ -70,6 +70,7 @@ class Printer{
 			try {
 				rel.lock();
 				System.out.println(Thread.currentThread().getName() +" "+ counter++);
+				Thread.sleep(2000);
 			}catch(Exception e) {
 				e.printStackTrace();
 			}finally {
